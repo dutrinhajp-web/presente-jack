@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Meu Jack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <div id="login-screen" class="screen active">
+        <div class="login-container">
+            <h1>Acesso Restrito</h1>
+            <p>Por favor, insira a senha para entrar no nosso universo.</p>
+            <input type="password" id="password-input" placeholder="Digite a senha...">
+            <button onclick="checkPassword()">Entrar</button>
+            <p id="login-error" class="error-msg">Senha incorreta. Tente novamente!</p>
+        </div>
+    </div>
+
+    <div id="main-content" class="screen">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Início</a></li>
+                    <li><a href="#" onclick="showSection('timeline')">Nossa História</a></li>
+                    <li><a href="#" onclick="showSection('gallery')">Galeria</a></li>
+                    <li><a href="#" onclick="showSection('letters')">Cartas & Polaris</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="content-section active">
+                <div class="hero">
+                    <h1 class="title">Para o Meu Homem, Jack</h1>
+                    <p class="subtitle">Cada estrela no céu representa um motivo pelo qual eu te amo.</p>
+                    
+                    <div class="counter-box">
+                        <h2>O tempo voa ao seu lado</h2>
+                        <p>Juntos há:</p>
+                        <div id="time-counter" class="counter">
+                            </div>
+                        <p class="start-date">Desde 07 de fevereiro de 2026</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="timeline" class="content-section">
+                <h2 class="section-title">Nossa História</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Como Tudo Começou</h3>
+                            <p>O início da nossa jornada. O momento em que nossos mundos colidiram de forma perfeita.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>07 de Fevereiro de 2026</h3>
+                            <p>O dia em que decidimos que seríamos nós contra o mundo. O início oficial do nosso para sempre.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Hoje e Sempre</h3>
+                            <p>Construindo memórias, superando desafios e te amando cada dia mais, meu marido.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="content-section">
+                <h2 class="section-title">Nossos Momentos</h2>
+                <p class="gallery-desc">As imagens perfeitas exatamente como são, sem filtros, porque a nossa realidade já é incrível.</p>
+               <div class="photo-grid">
+                    <div class="photo-card"><img src="assets/foto1.jpg.jpeg" alt="Nosso momento 1"></div>
+                    <div class="photo-card"><img src="assets/foto2.jpg.jpeg" alt="Nosso momento 2"></div>
+                    <div class="photo-card"><img src="assets/foto3.jpg.jpeg" alt="Nosso momento 3"></div>
+                    <div class="photo-card"><img src="assets/foto4.jpg.jpeg" alt="Nosso momento 4"></div>
+                    <div class="photo-card"><img src="assets/foto5.jpg.jpeg" alt="Nosso momento 5"></div>
+                    <div class="photo-card"><img src="assets/foto6.jpg.jpeg" alt="Nosso momento 6"></div>
+                    <div class="photo-card"><img src="assets/foto7.jpg.jpeg" alt="Nosso momento 7"></div>
+                    <div class="photo-card"><img src="assets/foto8.jpg.jpeg" alt="Nosso momento 8"></div>
+                    <div class="photo-card"><img src="assets/foto9.jpg.jpeg" alt="Nosso momento 9"></div>
+                    <div class="photo-card"><img src="assets/foto10.jpg.jpeg" alt="Nosso momento 10"></div>
+                    <div class="photo-card"><img src="assets/foto11.jpg.jpeg" alt="Nosso momento 11"></div>
+                    <div class="photo-card"><img src="assets/foto12.jpg.jpeg" alt="Nosso momento 12"></div>
+                    <div class="photo-card"><img src="assets/foto13.jpg.jpeg" alt="Nosso momento 13"></div>
+                    <div class="photo-card"><img src="assets/foto14.jpg.jpeg" alt="Nosso momento 14"></div>
+                    <div class="photo-card"><img src="assets/foto15.jpg.jpeg" alt="Nosso momento 15"></div>
+
+                    <!-- O SEU VÍDEO AQUI -->
+                    <div class="photo-card">
+                        <video controls>
+                            <source src="assets/nosso-video.mp4" type="video/mp4">
+                            Seu navegador não suporta a exibição de vídeos.
+                        </video>
+                    </div>
+                    
+                    <div class="photo-card"><img src="assets/foto16.jpg.jpeg" alt="Nosso momento 16"></div>
+                    <div class="photo-card"><img src="assets/foto17.jpg.jpeg" alt="Nosso momento 17"></div>
+                    <div class="photo-card"><img src="assets/foto18.jpg.jpeg" alt="Nosso momento 18"></div>
+                    <div class="photo-card"><img src="assets/foto19.jpg.jpeg" alt="Nosso momento 19"></div>
+                    <div class="photo-card"><img src="assets/foto20.jpg.jpeg" alt="Nosso momento 20"></div>
+                    <div class="photo-card"><img src="assets/foto21.jpg.jpeg" alt="Nosso momento 21"></div>
+                    <div class="photo-card"><img src="assets/foto22.jpg.jpeg" alt="Nosso momento 22"></div>
+                    <div class="photo-card"><img src="assets/foto23.jpg.jpeg" alt="Nosso momento 23"></div>
+                    <div class="photo-card"><img src="assets/foto24.jpg.jpeg" alt="Nosso momento 24"></div>
+                    <div class="photo-card"><img src="assets/foto25.jpg.jpeg" alt="Nosso momento 25"></div>
+                    <div class="photo-card"><img src="assets/foto26.jpg.jpeg" alt="Nosso momento 26"></div>
+                    <div class="photo-card"><img src="assets/foto27.jpg.jpeg" alt="Nosso momento 27"></div>
+                    <div class="photo-card"><img src="assets/foto28.jpg.jpeg" alt="Nosso momento 28"></div>
+                    <div class="photo-card"><img src="assets/foto29.jpg.jpeg" alt="Nosso momento 29"></div>
+                    <div class="photo-card"><img src="assets/foto30.jpg.jpeg" alt="Nosso momento 30"></div>
+                </div>                
+            </section>
+
+            <section id="letters" class="content-section">
+                <h2 class="section-title">Para João Paulinho</h2>
+                <div class="letter-container">
+                    <article class="letter">
+                        <h3>Minha Constelação, Polaris</h3>
+                        <p>João Paulo,</p>
+                        <p>Você é a minha Polaris, a estrela guia que me orienta mesmo nas noites mais escuras. Desde que você entrou na minha vida, tudo ganhou uma nova cor e um novo sentido. Encontrar alguém que seja abrigo, paixão e meu melhor amigo no mesmo abraço é o meu maior privilégio.</p>
+                        <p>Eu te amo em todos os seus detalhes, do seu sorriso à forma como você me faz sentir a pessoa mais especial do mundo. Meu namorado, meu macho, meu porto seguro.</p>
+                        <p class="signature">Com todo o meu amor,<br>Dutra</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
